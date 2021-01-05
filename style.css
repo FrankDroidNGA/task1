@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Roboto&display=swap');
+body {
+	margin: 0;
+	background: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #555555;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Redressed";
+  color: #f6f6f6
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #f6f6f6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #f6f6f6;
+}
+
+.hover-bar::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #f6f6f6;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+.hover-bar:hover::before {
+  width: 100%;
+}
+
+/* Navigation Bar Buttons */
+
+.button1{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 2px;
+  text-transform: uppercase;
+ }
+.button2{
+  background-color: #696969;
+  border: white;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 2px;
+  transition-duration: 0.4s;
+  text-transform: uppercase;
+  border: 2px solid white;
+}
+
+.button1:hover {
+  background-color: #228B22;
+  color: white;
+}
+
+.button2:hover {
+  background-color: #1E1D1D;
+  color: white;
+ }
+
+
+ /* Page Content */
+
+ .wrapper{
+  display:grid;
+  grid-template-columns:1fr 2fr 1fr;
+  grid-auto-rows:minmax(100px, auto);
+  grid-gap:1em;
+  justify-items:stretch;
+  align-items:stretch;
+}
+
+.wrapper > div{
+  background:#eee;
+  padding:1em;
+}
+.wrapper > div:nth-child(odd){
+  background:#ddd;
+}
+
+.box1{
+  /*align-self:start;*/
+  grid-column:1/3;
+  grid-row:1;
+}
+
+.box2{
+  /*align-self:end;*/
+  grid-column:3;
+  grid-row:1/4;
+}
+
+.box3{
+  /*align-self:start;*/
+  grid-column:1/3;
+  grid-row:2;
+}
+
+.box4{
+  /*align-self:start;*/
+  grid-column:1/3;
+  grid-row:3;
+}
+
+.nested{
+  display:grid;
+  grid-template-columns: 100px 1fr;
+  grid-auto-rows: 100%;
+  grid-gap:0.5em;
+}
+
+#second_headers {
+  margin: 0px;
+  font-weight: 50;
+}
+.button_box{
+  background-color: white;
+  border: #228B22;
+  color: black;
+  padding: 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 2px;
+  transition-duration: 0.4s;
+  border: 2px solid #228B22;
+}
+.button_box:hover {
+  background-color: #228B22;
+  color: white;
+ }
